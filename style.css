@@ -7,16 +7,28 @@ body {
     min-height: 100vh;
     margin: 0;
     text-align: center;
-    color: white; /* Para o texto se destacar no fundo que muda de cor */
-    transition: background-color 0.1s; /* Transição suave para a mudança de cor */
+    color: white;
+    transition: background-color 0.2s;
+    overflow: hidden;
+    position: relative;
 }
 
 h1 {
     font-size: 3em;
     text-shadow: 2px 2px 4px #000000;
+    z-index: 1;
 }
 
 p {
     font-size: 1.5em;
     text-shadow: 1px 1px 2px #000000;
+    z-index: 1;
+}
+
+#floatingImage {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.7);
 }
